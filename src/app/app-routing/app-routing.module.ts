@@ -15,9 +15,11 @@ import { ForgotPassordComponent } from '../forgot-passord/forgot-passord.compone
  import { ProfileComponent } from "../customerdashboard/profile/profile.component";
  import {VehiclesComponent} from '../customerdashboard/vehicles/vehicles.component'
 import { GenerateqrComponent } from '../servicestation/generateqr/generateqr.component';
+import { HomepageComponent } from '../homepage/homepage.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'sign-in', component: SigninComponent },
   { path: 'register-user', component: SignupComponent },
   { path: 'dashboard', component: DashboardComponent },
@@ -25,7 +27,10 @@ const routes: Routes = [
    { path: 'verify-email-address', component: VerifyEmailComponent },
    { path: 'customer-profile', component: ProfileComponent },
    { path: 'vehicle-register', component: VehiclesComponent },
-   { path: 'qr-generator', component: GenerateqrComponent }
+   { path: 'qr-generator', component: GenerateqrComponent },
+   {path:  'home' ,component:HomepageComponent }
+
+  
 ];
 
 @NgModule({
